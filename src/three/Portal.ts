@@ -247,6 +247,9 @@ class Portal extends Mesh {
     this.color.set(color || this.color);
     this.clipBias = clipBias || this.clipBias;
 
+    this.virtualCamera.matrixAutoUpdate = false;
+    this.virtualCamera.userData.refractor = true;
+
     if (!MathUtils.isPowerOfTwo(this.textureWidth) || !MathUtils.isPowerOfTwo(this.textureHeight)) {
       this.renderTarget.texture.generateMipmaps = false;
     }
@@ -257,3 +260,5 @@ class Portal extends Mesh {
   }
 
 }
+
+export {Portal}
