@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/src/",
+    // "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "es2015",
+    "target": "es6",
+    "jsx": "react",
+    // "declaration": true,
+    "strict": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    // "importHelpers": false,
+    // "types": [],
+    "moduleResolution": "node",
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.worker.js",
+    // "shaders"
+  ],
+  // "include": ["*", "@types/raw-loader.d.ts"]
+}

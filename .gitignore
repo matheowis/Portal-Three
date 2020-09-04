@@ -1,0 +1,5 @@
+node_modules
+notes
+package-lock.json
+*.note.*
+production/public/src
